@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gestión de Grupos</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="navbar">
+    <img src="/prueba/logo.png" alt="Logo" class="logo">
+    <nav class="nav-links">
+      <a href="#">Matrículas</a>
+      <a href="#" class="active">Grupos</a>
+      <a href="#">Estadísticas</a>
+      <a href="#">Usuarios</a>
+      <a href="#">Certificaciones</a>
+    </nav>
+    <div class="cuenta">
+      <span>Cuenta Administrador</span>
+    </div>
+  </header>
+   <section class="titulo-seccion">
+      <h1>Gestión de Grupos</h1>
+      <div class="botones-superiores">
+        <button>Ciclos e Idiomas</button>
+        <button>Docentes</button>
+      </div>
+    </section>
+
+    <main>
+        <div class="container">
+
+            <div class="cards">
+                <div class="card card-primary">
+                    <i class="fa fa-users icon"></i>
+                    <h3>Agregar Grupo</h3>
+                    <p>Gestiona los grupos, ciclos e idiomas asociados.</p>
+                </div>
+
+                 <a href="listarGrupo.html" class="card" style="text-decoration: none; color: inherit;">
+    <div class="icono">📚</div>
+    <h3>Lista de Grupos</h3>
+    <p>Lista los grupos disponibles en tu sistema.</p>
+  </a>
+            </div>
+
+            <form class="form-group">
+                <div class="form-row">
+                    <label for="periodo">Periodo</label>
+                    <select id="periodo" name="periodo">
+                        <option value="">Selecciona un Período</option>
+                        <option value="1">Período 1</option>
+                        <option value="2">Período 2</option>
+                    </select>
+
+                    <label for="modalidad">Modalidad</label>
+                    <select id="modalidad" name="modalidad">
+                        <option value="">Seleccione una modalidad</option>
+                        <option value="presencial">Presencial</option>
+                        <option value="virtual">Virtual</option>
+                    </select>
+
+                    <label for="vacantes">Número de Vacantes</label>
+                    <input type="number" id="vacantes" name="vacantes" placeholder="" />
+                </div>
+
+                <div class="form-row">
+                    <label for="hora-entrada">Horario de Entrada</label>
+                    <input type="time" id="hora-entrada" name="hora-entrada" />
+
+                    <label for="hora-salida">Horario de Salida</label>
+                    <input type="time" id="hora-salida" name="hora-salida" />
+
+                    <label for="ciclo">Ciclo</label>
+                    <select id="ciclo" name="ciclo">
+                        <option value="">Seleccione un ciclo</option>
+                        <option value="ciclo1">Ciclo 1</option>
+                        <option value="ciclo2">Ciclo 2</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="docente">Docente</label>
+                    <select id="docente" name="docente">
+                        <option value="">Seleccione un docente</option>
+                        <option value="docente1">Docente 1</option>
+                        <option value="docente2">Docente 2</option>
+                    </select>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                    <button type="button" class="btn btn-cancel">Cancelar</button>
+                </div>
+            </form>
+
+        </div>
+    </main>
+</body>
+</html>

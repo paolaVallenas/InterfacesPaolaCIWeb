@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gestión de Grupos</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Matrículas</a></li>
+                <li><a href="#" class="active">Grupos &#10003;</a></li>
+                <li><a href="#">Estadísticas</a></li>
+                <li><a href="#">Usuarios</a></li>
+                <li><a href="#">Certificaciones</a></li>
+                <li class="admin-account">
+                    <a href="#">Cuenta Administrador <i class="fa fa-caret-down"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="gestion-header">
+        <h2>Gestión de Grupos</h2>
+        <div class="btn-group">
+            <button class="btn btn-light">Ciclos e Idiomas</button>
+            <button class="btn btn-light">Docentes</button>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+
+            <div class="cards">
+                <div class="card card-primary">
+                    <i class="fa fa-users icon"></i>
+                    <h3>Agregar Grupo</h3>
+                    <p>Gestiona los grupos, ciclos e idiomas asociados.</p>
+                </div>
+
+                <div class="card card-primary">
+                    <i class="fa fa-layer-group icon"></i>
+                    <h3>Lista de Grupos</h3>
+                    <p>Lista los grupos disponibles en tu sistema.</p>
+                </div>
+            </div>
+
+            <form class="form-group">
+                <div class="form-row">
+                    <label for="periodo">Periodo</label>
+                    <select id="periodo" name="periodo">
+                        <option value="">Selecciona un Período</option>
+                        <option value="1">Período 1</option>
+                        <option value="2">Período 2</option>
+                    </select>
+
+                    <label for="modalidad">Modalidad</label>
+                    <select id="modalidad" name="modalidad">
+                        <option value="">Seleccione una modalidad</option>
+                        <option value="presencial">Presencial</option>
+                        <option value="virtual">Virtual</option>
+                    </select>
+
+                    <label for="vacantes">Número de Vacantes</label>
+                    <input type="number" id="vacantes" name="vacantes" placeholder="" />
+                </div>
+
+                <div class="form-row">
+                    <label for="hora-entrada">Horario de Entrada</label>
+                    <input type="time" id="hora-entrada" name="hora-entrada" />
+
+                    <label for="hora-salida">Horario de Salida</label>
+                    <input type="time" id="hora-salida" name="hora-salida" />
+
+                    <label for="ciclo">Ciclo</label>
+                    <select id="ciclo" name="ciclo">
+                        <option value="">Seleccione un ciclo</option>
+                        <option value="ciclo1">Ciclo 1</option>
+                        <option value="ciclo2">Ciclo 2</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="docente">Docente</label>
+                    <select id="docente" name="docente">
+                        <option value="">Seleccione un docente</option>
+                        <option value="docente1">Docente 1</option>
+                        <option value="docente2">Docente 2</option>
+                    </select>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                    <button type="button" class="btn btn-cancel">Cancelar</button>
+                </div>
+            </form>
+
+        </div>
+    </main>
+</body>
+</html>
